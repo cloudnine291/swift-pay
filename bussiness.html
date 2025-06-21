@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGEG | Business Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The Grand Elvis Global (TGEG)</h1>
+        <h3>Business Transaction Gateway</h3>
+        <p class="tagline">Enter your business number to continue</p>
+
+        <div class="form-box">
+            <input type="text" id="bizNumber" placeholder="Enter business number">
+            <button id="bizBtn">Confirm Payment</button>
+        </div>
+
+        <p class="footer-note">
+            🏢 "Business Payments, Streamlined & Trusted."
+        </p>
+    </div>
+
+    <script>
+        document.getElementById('bizBtn').addEventListener('click', function () {
+            this.textContent = 'Pending...';
+            this.disabled = true;
+            this.style.backgroundColor = '#999';
+        });
+    </script>
+</body>
+</html>
